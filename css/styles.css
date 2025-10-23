@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f8f9fa;
     font-family: Arial, sans-serif;
@@ -5,7 +11,7 @@ body {
 
 .container {
     margin-top: 50px;
-    max-width: 600px;
+    max-width: 300px;
     background-color: #97c096;
     padding: 20px;
     border-radius: 5px;
@@ -15,6 +21,8 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .form-group {
@@ -29,7 +37,7 @@ h1 {
 
 .currency-input-wrapper .currency-symbol {
     position: absolute;
-    left: 10px;
+    left: 40px;
     top: 50%;
     transform: translateY(-50%);
     color: #6c757d;
@@ -39,6 +47,21 @@ h1 {
 
 .currency-input-wrapper input {
     padding-left: 25px;
+}
+
+.form-label {
+    display: block;
+    margin-left: 35px;
+}
+
+.form-control {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    display: block;
+    margin: 0 auto;
 }
 
 .btn {
@@ -64,3 +87,40 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .container {
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .currency-input-wrapper .currency-symbol {
+        left: 50px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .currency-input-wrapper .currency-symbol {
+        left: 70px;
+    }
+
+}
+
+/* End of CSS */
