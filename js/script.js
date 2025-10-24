@@ -25,6 +25,8 @@ document
     const totalAmount = billAmount + tipAmount;
 
     // Display results
+    document.getElementById("bill-amount-display").textContent =
+      billAmount.toFixed(2);
     document.getElementById("tip-amount").textContent = tipAmount.toFixed(2);
     document.getElementById("total-amount").textContent =
       totalAmount.toFixed(2);
